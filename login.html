@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="icon" href="./images/mainicon.png">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+
+<body>
+  <!-- nav -->
+  <nav class="navbar navbar-expand-lg navbar-default " id="navbar" >
+    <div class="container-fluid " id="navbarNav">
+      <a class="navbar-brand" href="#"><img src="./images/logo.gif" style="height: 36px; width: 100px;" alt="" ></a> 
+
+      <div class="topnav-right">
+        <button type="button" class="btn btn-primary btn lg" id="myBtn"> <i class="fa fa-user" style="font-size:24px ;color:white;"></i> LOGIN</button>
+    </div>
+</nav>
+<!-- /nav -->
+ 
+  <!-- Modal -->
+  <div class="wrapper" >
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="imgcontainer">
+          <img src="./images/login.gif"  alt="Avatar" class="avatar">
+        </div>
+        
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="usrname" id="label"><span class="glyphicon glyphicon-user"id="glyph"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="psw" id="label"><span class="glyphicon glyphicon-eye-open" id="glyph"></span> Password</label>
+              <input type="password" class="form-control" id="psw" placeholder="Password" required><br>
+            </div>  
+
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div><br>
+            
+              <button type="button" class="btn btn-success btn-block" id="button" onclick="validate(display)"><span class="glyphicon glyphicon-off"></span> Login</button>
+          </form>
+        </div>
+      </div>
+   </div>
+  </div> 
+  <ul class="bg-bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div> 
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+<script src="./jsfiles/validation.js"></script>    
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="./images/mainicon.png">
+    <link rel="stylesheet" href="./css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top " id="navbar" >
+      <div class="container-fluid " id="navbarNav">
+          <a class="navbar-brand" href="#"><img src="./images/logo.gif" style="height: 50px; width: 100px;" alt="" ></a> 
+        <div class="topnav-right">
+            <a class="btn btn-primary btn-sm " id="btn" ><i class="fa fa-list" aria-hidden="true"></i> TODO</a>
+            <a class="btn btn-primary btn-sm "  id="bttn" href="./login.html"> <i class="fa fa-user"></i> LOGOUT</a>
+        </div>
+      </div>  
+    </nav>
+
+    <div class="container">
+        <div class="heading">
+            <h4 class="shadow-text">THINGS TO BE DONE..</h4> <br><br>
+            <h4><i class="fa fa-hand-o-right" id="favicon" aria-hidden="true"></i>     (Click on TODO button to generate list)</h4>
+        </div>
+       <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="data"></table>
+        </div>
+     </div>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <script src="./jsfiles/todo1.js"></script>
+    
+</body>
+</html>
